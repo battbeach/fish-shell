@@ -18,7 +18,9 @@ parameter expansion.
 #include <limits.h>
 #include <sys/param.h>
 #include <sys/types.h>
+#ifndef __CYGWIN32__
 #include <sys/sysctl.h>
+#endif
 #include <termios.h>
 #include <dirent.h>
 #include <sys/stat.h>

@@ -24,6 +24,13 @@ fish can be built using autotools or Xcode.
     make [gmake on BSD]
     sudo make install
 
+### Cygwin Build
+
+    autoconf
+    ./configure CPPFLAGS=-I/usr/include/ncurses CXXFLAGS=-I/usr/include/ncurses
+    make 
+    make install
+
 ### Xcode Development Build
 
 * Build the `base` target in Xcode
